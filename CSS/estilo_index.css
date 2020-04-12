@@ -23,6 +23,39 @@ a:hover {
     height: 60px;
     background: #000;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nome-titulo h2 {
+    margin-left: 20px;
+    color: #fff;
+}
+
+/* Animação no H2 Portifolio */
+.nome-titulo h2:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0,0,0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate(-1px,0,0);
+    }
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    
+      30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    
+      40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
 }
 
 /* Main do site */
@@ -189,37 +222,10 @@ h3 {
     position: absolute;
 }
 
-.box {
-    width: 100%;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-}
-
 /* Tratamento da imagem */
 .slider2 img {
     width: 50%;
     height: 90%;
-}
-
-/* div lateral com infos */
-.complemento {
-    width: 50%;
-    height: 90%;
-    background-color: #fff;
-    box-shadow: 5px 0px 10px #ccc inset;
-}
-
-.complemento h2 {
-    width: 100%;
-    padding: 40px 20px 20px;
-    text-align: center;
-}
-
-.complemento p {
-    width: 100%;
-    padding: 10px 50px;
-    text-align: center;
 }
 
 /* Tratamento das labels e inputs do slider 2 */
@@ -314,40 +320,13 @@ h3 {
     position: absolute;
 }
 
-.box {
-    width: 100%;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-}
-
 /* Tratamento da imagem */
 .slider3 img {
     width: 50%;
     height: 90%;
 }
 
-/* div lateral com infos */
-.complemento {
-    width: 50%;
-    height: 90%;
-    background-color: #fff;
-    box-shadow: 5px 0px 10px #ccc inset;
-}
-
-.complemento h2 {
-    width: 100%;
-    padding: 40px 20px 20px;
-    text-align: center;
-}
-
-.complemento p {
-    width: 100%;
-    padding: 10px 50px;
-    text-align: center;
-}
-
-/* Tratamento das labels e inputs do slider 2 */
+/* Tratamento das labels e inputs do slider 3 */
 .slider3 input {
     display: none;
 }
